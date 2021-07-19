@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divone">
+        DivOne is here
+        <button onclick="myFun('divone')">divOne</button>
+    </div>
+    
+    <div id="divtwo">
+        DivOne is here
+        <button onclick="myFun('divtwo')">divTwo</button>
+    </div>
+    <div id="divthree">
+        DivOne is here
+        <button onclick="myFun('divthree')">divThree</button>
+    </div>
+    <button onclick="mywholepage()">wholePage</button>
+    <script type="text/javascript">
+        function mywholepage(){
+            window.print();
+        }
+        function myFun(paravalue){
+            //// please refer to thapas video for more knowledge
+            var backup = document.body.innerHTML
+            var divContent = document.getElementById(paravalue).innerHTML
+            document.body.innerHTML = divContent
+            window.print()
+            document.body.innerHTML = backup
+        }
+    </script>
+</body>
+</html>

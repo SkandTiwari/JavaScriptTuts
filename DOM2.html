@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="name">Skand</p>
+    <p class="surname">Tiwari</p>
+    <ul>
+        <li>Skand</li>
+        <li>Tiwari</li>
+        <li>first name</li>
+        <li>last name</li>
+    </ul>
+
+    <script type="text/javascript">
+        var childData = document.body.children;
+        console.log(childData);
+        document.write(childData);
+
+        // appending or adding new child
+
+        var para = document.createElement("p");
+        var textNode = document.createTextNode("This the textNode written using javascript");
+        para.appendChild(textNode);   // here we are adding textNode to the para tag
+        console.log(para);
+
+
+        //following line of code appends new child element that is created above
+
+        document.body.appendChild(para);
+
+        // accessing firstchild and lastchild
+        // in the following code we are going to obtain first and last child of <ul>
+
+        var list = document.querySelector("ul");
+        console.log(list);
+        console.log(list.firstChild);
+        console.log(list.lastChild); 
+        document.write(list.lastChild);
+        document.write("<br>");
+        document.write(list.firstChild);
+
+        // accessing siblings
+
+        var sibling = name.nextElementSibling;
+        console.log(sibling);
+        
+
+        // accsessing parent node
+
+        console.log(list.parentNode);
+
+    </script>
+</body>
+</html>

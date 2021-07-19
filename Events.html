@@ -1,0 +1,49 @@
+<!--
+    Javascripts interaction with HTML is handled through events that occur when
+    the user or the browser manipulates a page .
+
+    Events are the part of DOM Level 3 and every HTML contains the set of evrnts which can trigger JavaScript
+    code
+
+    when the page loads its called an event. when user clicks a button thats too called an event.
+
+    onclick
+    onmouseover and onmouseout
+    onkeydown script Script runs when ey is pressed
+    onkeypress script Script runs when key is pressed and released 
+    onkeyup script script runs when key is up or relaesed
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">This the demonstration of events</h2>
+    <br>
+    <h4 style="text-align: center;">here we will see the live implementation of javascripts events. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum deserunt, perspiciatis laudantium quod excepturi possimus fugiat ducimus nostrum eius nulla quasi illum mollitia cupiditate veniam cum suscipit repellat similique? Sint.</h4>
+    <input type="button" name="" id="colChng" value="Click me" onclick="ColFun()">
+    <script type="text/javascript">
+        var count=0;
+  
+        function ColFun(){
+            count = count + 1;
+            if(count%2 == 0){
+                document.body.style.backgroundColor = 'red';
+                document.body.style.color = 'black';
+            }
+            else{
+                document.body.style.backgroundColor = 'green';
+                document.body.style.color = 'white'
+            }
+        }
+    </script>
+</body>
+</html>

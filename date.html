@@ -1,0 +1,44 @@
+<!--
+    Javascript date object lets us work with dates:
+
+    var d = new Date();
+
+    Date objects are based ona time value that is the number of milisecond since 1 january 1970.
+
+    by default javascript will use the browsers's time zone and display date as full string:
+
+    3 numbers specify year, month, and day:
+    2numbers specify year and month
+    You cant omit month if you supply only one parameter it will be treated as miliseconds
+
+    getFullYear() get year as four digit number
+    getMonth() Get the month as a number (0-11)
+    getDate() Get the day as a number (1-31)
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var dateTime = new Date();
+        document.write(dateTime);
+        document.write("<br>");
+
+        var cosDateTime = new Date(2021,0,26);  // custom date
+        document.write(cosDateTime);
+        document.write("<br>");
+
+        var year = dateTime.getFullYear();
+        var month = dateTime.getMonth() + 1;
+        var day = dateTime.getDate();
+        document.write(day + "/" + month + "/" + year);
+    </script>
+</body>
+</html>

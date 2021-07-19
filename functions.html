@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function demo</title>
+</head>
+
+<body>
+<h3>Enter your name to generate invitation</h3>
+<form>
+    <input type="text" name="" id="names">
+    <br>
+    <button onclick="main()">Submit</button>
+</form>
+<script type="text/javascript"> 
+    function main(){
+        function invitation(sttr){
+            document.write("Dear"+sttr);
+            document.write("<br>");
+            document.write("you are invited in this meeting");
+        }
+
+        var name = document.getElementById("names").value;
+        invitation(name);
+    }
+</script>
+</body>
+</html>i

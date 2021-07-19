@@ -1,0 +1,43 @@
+<!--
+    A confirmation box is used to take user permission.
+     it displays the dialog box with two buttons namely Ok and Cancel
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation box</title>
+    <style>
+        .extern{
+            text-align: center;
+            border: 5px solid black;
+            margin: 43px;
+            padding: 34px;
+            border-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        function ask(){
+            var result = confirm("Do you want to continue to the external page?");
+            if(result == true){
+                window.open("http://www.youtube.com");
+            }
+            else{
+                document.write("Redirection cancelled");
+            }
+        }
+    </script>
+    <div class="extern">
+        <h2>External link</h2>
+        <h4>By clicking on following button you will be Redirected <br> to YouTube.com</h4>
+
+        <input type="button" name="" onclick="ask()" value="YouTube">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--
+    JavaScript Dialogbox alerts, prompt, confirmations. 
+    A prompt box is oftenused if you want the user 
+    to input a value before entering a page. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var name = prompt("Enter your Token.");
+        if(name == "EC189"){
+            document.write("redirecting to MainPage...");
+        }
+        else{
+            alert("Invalid token ID...Click on OK to return");
+        }
+
+    </script>
+</body>
+</html>
